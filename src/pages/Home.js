@@ -1,6 +1,10 @@
 import { movies } from "../data";
+import MovieCard from '../components/MovieCard';
 
 function Home() {
+  const dispMoveies = movies.map((movie, i) => (
+    <MovieCard key={i} title={movie.title} />
+  ));
 
   return (
     <>
@@ -10,6 +14,7 @@ function Home() {
       </header>
       <main>
         {/* Info goes here! */}
+        {dispMoveies}
       </main>
     </>
   );

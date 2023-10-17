@@ -1,21 +1,12 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar'
-import Home from '../pages/Home';
-import Movie from '../pages/Movie';
-import Directors from '../pages/Directors';
-import Actors from '../pages/Actors';
+import { Outlet } from 'react-router-dom';
 
 function App() {
     return (
         <React.Fragment>
             <NavBar />
-            <Routes>
-                <Route exact='true' path='/' element={<Home />} />
-                <Route path='/movies' element={<Movie />} />
-                <Route path='/directors' element={<Directors />} />
-                <Route path='/actors' element={<Actors />} />
-            </Routes>
+            <Outlet />
         </React.Fragment>
     );
 }
