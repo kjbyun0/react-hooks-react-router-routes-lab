@@ -3,6 +3,8 @@ import NavBar from './NavBar'
 import { Outlet } from 'react-router-dom';
 
 function App() {
+    console.log("In App");
+
     return (
         <React.Fragment>
             <NavBar />

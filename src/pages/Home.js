@@ -6,6 +6,8 @@ function Home() {
     <MovieCard key={i} title={movie.title} />
   ));
 
+  // console.log("In Home");
+
   return (
     <>
       <header>

@@ -7,7 +7,7 @@ function MovieCard({title}) {
         <h2>{title}</h2>
         {/* What should go here? */}
         {
-          <Link to={`http://localhost/movie/${title}`}>View Info</Link>
+          <Link to={`/movie/${title}`}>View Info</Link>
         }
     </article>
   );

@@ -1,22 +1,10 @@
-import { movies } from "../data";
 
 function Movie({ title, time, genres }) {
-  // const dispMovies = movies.map((movie, i) => (
-  //   <div key={i}>
-  //     <h3>Name: {movie.title}</h3>
-  //     <p>Time: {movie.time}</p>
-  //     <p>Genres:</p>
-  //     <ul>
-  //       {
-  //         movie.genres.map((genre, i) => (<li key={i}>{genre}</li>))
-  //       }
-  //     </ul>
-  //   </div>
-  // ));
-
   const dispGenres = genres.map((genre, i) => (
     <span key={i}>{genre}</span>
   ));
+
+  // console.log("In Movie");
 
   return (
     <>
@@ -26,7 +14,6 @@ function Movie({ title, time, genres }) {
       </header>
       <main>
         {/* Movie info here! */}
-        {/* {dispMovies} */}
         <h1>{title}</h1>
         <p>{time}</p>
         {dispGenres}
